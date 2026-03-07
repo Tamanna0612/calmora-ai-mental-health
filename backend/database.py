@@ -36,7 +36,7 @@ engine = create_engine(
     pool_pre_ping=True,   # Test connection before using — handles dropped connections
     pool_recycle=300,     # Recycle connections every 5 min — prevents stale connection errors
 )
-connection = engine.connect()
+
 
 # ============================================
 # SESSION CONFIGURATION
