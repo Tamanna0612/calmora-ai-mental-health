@@ -5,6 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 import os
+from fastapi.responses import Response
 
 from database import engine, Base, check_db_connection
 import models  # VERY IMPORTANT: loads all models
@@ -50,7 +51,7 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,   # Change to frontend URL in production
+    allow_origins=["*"],   # Change to frontend URL in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -86,3 +87,7 @@ def health_check():
         "status": "Healthy",
         "database": "Connected",
     }
+
+@app.get("/favicon.ico")
+def favicon():
+    return Response(status_code=204)
