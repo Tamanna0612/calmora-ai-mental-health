@@ -1,7 +1,7 @@
 
 const CONFIG = {
     // Backend API Configuration
-    API_BASE_URL: 'http://localhost:8000',
+    API_BASE_URL: 'https://calmora-ai-mental-health.onrender.com',
     
     // API Endpoints
     ENDPOINTS: {

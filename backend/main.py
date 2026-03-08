@@ -42,7 +42,8 @@ app = FastAPI(
 # ==========================================
 origins = [
     "http://localhost:3000",   # React
-    "http://localhost:5173",   # Vite
+    "http://localhost:5173",   
+    "https://calmora-ai.netlify.app"
 ]
 
 app.add_middleware(
