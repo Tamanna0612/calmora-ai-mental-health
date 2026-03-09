@@ -9,12 +9,12 @@ const MusicTherapy = {
 
     // Audio elements for different tracks (using placeholder audio)
     tracks: {
-        'nature': { name: 'Nature Sounds', url: "/Nature sounds.mp3" },
-        'ocean': { name: 'Ocean Waves', url: "/ocean waves.mp3" },
-        'meditation': { name: 'Meditation', url:"/focus.mp3"},
-        'rain': { name: 'Rain Sounds', url: "/rain.mp3" },
-        'piano': { name: 'Calm Piano', url: "/piano.mp3" },
-        'white-noise': { name: 'White Noise', url: "/forest.mp3" }
+        'nature': { name: 'Nature Sounds', url: "frontend/Nature sounds.mp3" },
+        'ocean': { name: 'Ocean Waves', url: "frontend/ocean waves.mp3" },
+        'meditation': { name: 'Meditation', url:"frontend/focus.mp3"},
+        'rain': { name: 'Rain Sounds', url: "frontend/rain.mp3" },
+        'piano': { name: 'Calm Piano', url: "frontend/piano.mp3" },
+        'white-noise': { name: 'White Noise', url: "frontend/forest.mp3" }
     },
 
     audioElement: null,
