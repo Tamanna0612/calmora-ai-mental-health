@@ -133,7 +133,9 @@ button { cursor:pointer; border:none; outline:none; font-family:var(--fb) }
 
 /* Home — gradient */
 #page-home.active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: var(--bg-home);
 }
 
@@ -277,7 +279,8 @@ body.dark      .icon-moon { display:none }
 
 /* ── HOME — HERO ─────────────────────────────────────────── */
 .hero {
-  text-align:center; padding:100px 0 60px; position:relative;
+  text-align:center; padding:100px 24px 60px; position:relative;
+  width:100%; max-width:var(--mw); margin:0 auto;
 }
 .hero::before {
   content:''; position:absolute; width:600px; height:600px; border-radius:50%;
@@ -316,7 +319,7 @@ body.dark      .icon-moon { display:none }
 @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
 
 /* ── SECTION BLOCKS ──────────────────────────────────────── */
-.section-block { padding:80px 0 20px; text-align:center }
+.section-block { padding:80px 24px 20px; text-align:center; width:100%; max-width:var(--mw); margin:0 auto; }
 .section-block.alt {
   background:rgba(99,102,241,.04); border-radius:var(--r4);
   margin:20px -24px 0; padding:70px 24px 60px;
