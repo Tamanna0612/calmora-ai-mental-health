@@ -571,6 +571,148 @@ body.dark .feat-card:hover { background:rgba(255,255,255,.08) }
 .mp-stop { background:rgba(239,68,68,.2); color:#fca5a5; border:1px solid rgba(239,68,68,.3); border-radius:var(--rf); padding:6px 14px; font-size:.78rem; font-weight:600; transition:background .2s; white-space:nowrap }
 .mp-stop:hover { background:rgba(239,68,68,.35) }
 
+
+.suggestion-bub {
+    background: linear-gradient(135deg, #f0fdf4, #eff6ff) !important;
+    border: 1.5px solid #a7f3d0 !important;
+    padding: 16px !important;
+}
+
+.sug-text {
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+.sug-music-rec {
+    background: rgba(99,102,241,.08);
+    border: 1px solid #c7d2fe;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 12.5px;
+    color: #4338ca;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.sug-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.chat-sugg-btn {
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: none;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .2s;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.primary-sugg {
+    background: linear-gradient(135deg, #0d9488, #6366f1);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(13,148,136,.28);
+}
+.primary-sugg:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(13,148,136,.38);
+}
+
+.secondary-sugg {
+    background: #f1f5f9;
+    color: #475569;
+    border: 1.5px solid #e2e8f0;
+}
+.secondary-sugg:hover {
+    background: #e2e8f0;
+}
+
+/* ═══════════════════════════════════════════════════
+   MUSIC PLAYER — add to your CSS if not present
+═══════════════════════════════════════════════════ */
+
+#musicPlayer {
+    position: sticky;
+    top: 70px;
+    z-index: 100;
+    background: #0f172a;
+    border-radius: 18px;
+    padding: 16px 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 32px rgba(15,23,42,.25);
+    flex-wrap: wrap;
+}
+#musicPlayer.hidden { display: none; }
+
+#playerTrackName {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+}
+
+#playerProgressBar {
+    flex: 1;
+    height: 4px;
+    background: rgba(255,255,255,.15);
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+#playerProgress {
+    height: 100%;
+    background: linear-gradient(90deg, #0d9488, #6366f1);
+    border-radius: 4px;
+    width: 0%;
+    transition: width .5s linear;
+}
+
+#playerPlayPauseBtn, #playerStopBtn {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,255,255,.1);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#playerPlayPauseBtn { background: linear-gradient(135deg,#0d9488,#6366f1); }
+#playerPlayPauseBtn:hover, #playerStopBtn:hover { transform: scale(1.1); }
+
+#playerVolume {
+    -webkitappearance: none;
+    width: 70px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgba(255,255,255,.2);
+    cursor: pointer;
+}
+#playerVolume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: #14b8a6;
+}
+
+@keyframes fadeUp {
+    from { opacity:0; transform:translateX(-50%) translateY(12px); }
+    to   { opacity:1; transform:translateX(-50%) translateY(0); }
+}
+
 /* ── AUTH PAGES ──────────────────────────────────────────── */
 .auth-page { position:relative; overflow:hidden }
 .auth-page::before { content:''; position:absolute; width:600px; height:600px; border-radius:50%; background:radial-gradient(circle,rgba(255,255,255,.12) 0%,transparent 60%); top:-200px; right:-100px; pointer-events:none }
