@@ -18,12 +18,12 @@ const MusicTherapy = {
     // IMPORTANT: Paths are relative to index.html root
     // On Netlify: put audio files in /frontend/ folder in your repo
     tracks: {
-        'nature':      { name: 'Nature Sounds',  emoji: '🌿', url: 'frontend/Nature sounds.mp3' },
-        'ocean':       { name: 'Ocean Waves',     emoji: '🌊', url: 'frontend/ocean waves.mp3'   },
-        'meditation':  { name: 'Meditation',      emoji: '🧘', url: 'frontend/focus.mp3'         },
-        'rain':        { name: 'Rain Sounds',     emoji: '🌧️', url: 'frontend/rain.mp3'          },
-        'piano':       { name: 'Calm Piano',      emoji: '🎹', url: 'frontend/piano.mp3'         },
-        'white-noise': { name: 'White Noise',     emoji: '💨', url: 'frontend/forest.mp3'        },
+        'nature':      { name: 'Nature Sounds',  emoji: '🌿', url: 'frontend/music/Nature sounds.mp3' },
+        'ocean':       { name: 'Ocean Waves',     emoji: '🌊', url: 'frontend/music/ocean waves.mp3'   },
+        'meditation':  { name: 'Meditation',      emoji: '🧘', url: 'frontend/music/focus.mp3'         },
+        'rain':        { name: 'Rain Sounds',     emoji: '🌧️', url: 'frontend/music/rain.mp3'          },
+        'piano':       { name: 'Calm Piano',      emoji: '🎹', url: 'frontend/music/piano.mp3'         },
+        'white-noise': { name: 'White Noise',     emoji: '💨', url: 'frontend/music/forest.mp3'        },
     },
 
     // ─── Create audio element once ──────────────────────────
