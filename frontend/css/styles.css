@@ -133,7 +133,7 @@ button { cursor:pointer; border:none; outline:none; font-family:var(--fb) }
 
 /* Home — gradient */
 #page-home.active {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
   background: var(--bg-home);
