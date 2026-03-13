@@ -82,10 +82,10 @@ button { cursor:pointer; border:none; outline:none; font-family:var(--fb) }
 .music-grad { background:linear-gradient(90deg,#a5b4fc,#e879f9,#67e8f9); background-clip:text; -webkit-background-clip:text; -webkit-text-fill-color:transparent }
 
 /* ── PAGE SYSTEM ─────────────────────────────────────────── */
-.main-wrap { margin-top:var(--nav-h); min-height:calc(100vh - var(--nav-h)) }
+.main-wrap { margin-top:var(--nav-h); min-height:calc(100vh - var(--nav-h)); display:flex; flex-direction:column; align-items:center; width:100%; }
 
 /* BUG FIX: display:none as default — NO inline style conflicts */
-.page { display:none; width:100% }
+.page { display:none; width:100%; max-width:100%; }
 
 .page.active {
   display: block;
@@ -133,9 +133,9 @@ button { cursor:pointer; border:none; outline:none; font-family:var(--fb) }
 
 /* Home — gradient */
 #page-home.active {
-  display: flex !important;
-  flex-direction: column;
-  align-items: center;
+  display: grid !important;
+  justify-items: center;
+  width: 100%;
   background: var(--bg-home);
 }
 
@@ -280,7 +280,8 @@ body.dark      .icon-moon { display:none }
 /* ── HOME — HERO ─────────────────────────────────────────── */
 .hero {
   text-align:center; padding:100px 24px 60px; position:relative;
-  width:100%; max-width:var(--mw); margin:0 auto;
+  width:100%; max-width:var(--mw); margin-left:auto; margin-right:auto;
+  box-sizing:border-box;
 }
 .hero::before {
   content:''; position:absolute; width:600px; height:600px; border-radius:50%;
