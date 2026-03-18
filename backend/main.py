@@ -69,7 +69,7 @@ origins = [
     "null",                        # file:// (open HTML directly in browser)
 
     # Production
-    "https://calmora-ai-mentalhealth.netlify.app/",
+    "https://calmora-ai-mentalhealth.netlify.app",
     # Add your Vercel URL here, e.g.:
     # "https://calmora.vercel.app",
 ]
